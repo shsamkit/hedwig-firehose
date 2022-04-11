@@ -1,4 +1,4 @@
-package firehose
+package main
 
 import (
 	"testing"
@@ -17,4 +17,10 @@ func (s *ExampleTestSuite) TestExample() {
 
 func TestExampleTestSuite(t *testing.T) {
 	suite.Run(t, new(ExampleTestSuite))
+}
+
+func TestNewFirehose(t *testing.T) {
+	var s struct{}
+	var s2 ProcessSettings
+	NewFirehose(s, s2)
 }
